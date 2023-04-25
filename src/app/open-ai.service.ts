@@ -11,7 +11,7 @@ export class OpenAIService {
   getData(input: string): Observable<any> {
     const prompt = { "prompt" : input};
     return this.http.post(
-      'http://localhost:5000/ask/', prompt,
+      'http://6993-188-43-14-13.ngrok.io/ask/', prompt,
       { responseType: 'json' }
     );
   }
